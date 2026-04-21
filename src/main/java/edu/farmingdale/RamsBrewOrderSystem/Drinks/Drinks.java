@@ -23,6 +23,10 @@ public abstract class Drinks {
     // Subclasses will return its own drink type
     public abstract String getDrinkType();
 
+    public boolean supportsShots() {
+        return false;
+    }
+
 
     // Getter for temperature
     public String getTemperature() {
@@ -76,9 +80,21 @@ public abstract class Drinks {
 
     // Returns description of the drink
     public String getDescription() {
-        return temperature + " " + size + " " + getDrinkType()
-                + "Milk: " + milk
-                + "Shots: " + shots
-                + "Sweetener: " + sweetener;
+        StringBuilder description = new StringBuilder();
+        description.append(temperature)
+                .append(" ")
+                .append(size)
+                .append(" ")
+                .append(getDrinkType())
+                .append(" | Milk: ")
+                .append(milk)
+                .append(" | Sweetener: ")
+                .append(sweetener);
+
+        if (supportsShots()) {
+            description.append(" | Shots: ").append(shots);
+        }
+
+        return description.toString();
     }
 }

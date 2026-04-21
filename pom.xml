@@ -60,8 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>edu.farmingdale.factorypattern/edu.farmingdale.factorypattern.HelloApplication
-                            </mainClass>
+                            <mainClass>edu.farmingdale.RamsBrewOrderSystem/edu.farmingdale.RamsBrewOrderSystem.OrderDriver</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

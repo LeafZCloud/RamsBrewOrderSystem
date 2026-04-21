@@ -12,4 +12,9 @@ public class Latte extends Drinks {
     public String getDrinkType() {
         return "Latte";
     }
+
+    @Override
+    public boolean supportsShots() {
+        return true;
+    }
 }
