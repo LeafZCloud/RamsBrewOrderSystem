@@ -35,6 +35,10 @@ public class DrinkBuilder {
     }
 
     public DrinkBuilder setShots(int shots) {
+        if (!drink.supportsShots()) {
+            return this;
+        }
+
         switch (shots) {
             case 1:
             case 2:

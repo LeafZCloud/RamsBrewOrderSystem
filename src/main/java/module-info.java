@@ -5,8 +5,6 @@ module edu.farmingdale.RamsBrewOrderSystem {
 
     opens edu.farmingdale.RamsBrewOrderSystem to javafx.fxml;
     exports edu.farmingdale.RamsBrewOrderSystem;
-    exports edu.farmingdale.RamsBrewOrderSystem.Options;
-    opens edu.farmingdale.RamsBrewOrderSystem.Options to javafx.fxml;
     exports edu.farmingdale.RamsBrewOrderSystem.Drinks;
     opens edu.farmingdale.RamsBrewOrderSystem.Drinks to javafx.fxml;
     exports edu.farmingdale.RamsBrewOrderSystem.Factories;

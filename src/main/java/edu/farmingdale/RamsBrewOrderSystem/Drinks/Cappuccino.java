@@ -12,4 +12,9 @@ public class Cappuccino extends Drinks {
     public String getDrinkType() {
         return "Cappuccino";
     }
+
+    @Override
+    public boolean supportsShots() {
+        return true;
+    }
 }
