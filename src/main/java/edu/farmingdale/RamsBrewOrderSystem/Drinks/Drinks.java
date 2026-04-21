@@ -19,6 +19,7 @@ public abstract class Drinks {
         this.sweetener = "None";
     }
 
+
     // Subclasses will return its own drink type
     public abstract String getDrinkType();
 
@@ -71,6 +72,7 @@ public abstract class Drinks {
     public void setSweetener(String sweetener) {
         this.sweetener = sweetener;
     }
+
 
     // Returns description of the drink
     public String getDescription() {
